@@ -31,6 +31,8 @@ const LEYENDA: Record<string, { color: string; texto: string }[]> = {
 
 // Destino del clic en el avatar y el nombre. Si se publica el portafolio (joucode-dev), cambiar aquí.
 const PERFIL = 'https://github.com/Josuesp1620';
+// Código de esta web.
+const REPO = 'https://github.com/Josuesp1620/planos-web-ai';
 
 /** Autores, como en los banners: avatar + usuario de GitHub | logo + API SERVICE SAC. */
 function Autores() {
@@ -48,6 +50,10 @@ function Autores() {
           <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden><path d="M0 1.15C0 .52.52 0 1.16 0h13.68C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.16 1.15H1.16C.52 16 0 15.48 0 14.85V1.15zm4.94 12.24V6.18H2.54v7.21h2.4zm-1.2-8.2c.84 0 1.36-.55 1.36-1.25-.01-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25h.01zm4.9 8.2V9.36c0-.21.02-.43.08-.58.17-.43.57-.88 1.23-.88.87 0 1.21.66 1.21 1.63v3.86h2.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.29 0-1.86.71-2.18 1.21v.03h-.02l.02-.03V6.18h-2.4c.03.68 0 7.21 0 7.21h2.4z"/></svg>
         </a>
       </div>
+      <a href={REPO} target="_blank" rel="noreferrer" aria-label="Código de esta web en GitHub" title="Código de esta web en GitHub" className="hidden items-center gap-1.5 md:flex rounded-md border border-borde px-1.5 py-1 font-mono text-[11px] text-tenue transition hover:border-tinta/40 hover:text-tinta focus-visible:outline-2 focus-visible:outline-tinta">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M5.5 4 1.5 8l4 4M10.5 4l4 4-4 4" /></svg>
+        <span className="hidden 2xl:inline">Código</span>
+      </a>
       <span className="h-6 w-px bg-borde" aria-hidden />
       <a href="https://apiservicesac.com" target="_blank" rel="noreferrer" className="group flex items-center gap-2" title="API SERVICE SAC">
         <img src="/marca/api-service-sac.png" alt="" width={30} height={30} className="h-[30px] w-[30px] object-contain" />

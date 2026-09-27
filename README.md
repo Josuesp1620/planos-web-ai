@@ -27,7 +27,9 @@ Explora paso a paso, en 3D, cómo un RAG divide, vectoriza y busca en el caso de
 | `pnpm deploy`     | Compila y publica en Cloudflare                   |
 | `pnpm cf-typegen` | Regenera los tipos de las bindings de Workers     |
 
-Para volver a exportar los datos reales (desde `planos/`): `uv run web/scripts/exportar_datos.py`.
+Para volver a exportar los datos reales (desde `planos/`): `uv run web/scripts/exportar_datos.py`. El script
+usa `datos/rag_ley.py` de la carpeta principal de Planos, que no está en este repo: aquí sirve como referencia
+de cómo se generaron los datos.
 
 En el servidor de desarrollo pnpm no se instala: corre dentro de Docker.
 
@@ -67,3 +69,8 @@ siempre usan la similitud real.
 - Sin `StrictMode` y con una etiqueta `<Html>` invisible de relevo en `Escenario.tsx`: drei pierde la primera
   etiqueta que se monta en el lienzo.
 - La cámara usa `CameraControls` con una posición por pestaña (`CAMARAS` en `escenas/Escenario.tsx`).
+
+## Licencia
+
+Código bajo licencia MIT ([`LICENSE`](LICENSE)). No incluye los logos de API SERVICE SAC, la foto de perfil
+ni el texto de la Ley N° 29571 (edición de Indecopi), que se usa solo como caso de estudio.
