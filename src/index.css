@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Paleta de Planos: la de la serie Espacio latente, con el amarillo del plano de ingeniería. */
+@theme {
+  /* Interfaz: grafito sobrio. El color queda para los datos. */
+  --color-fondo: #0b0d12;
+  --color-panel: #111419;
+  --color-borde: #1f242e;
+  --color-tinta: #e9ebf0;
+  --color-tenue: #8d94a5;
+  /* Datos */
+  --color-cian: #5ee0f0;
+  --color-magenta: #f47ab8;
+  --color-dorado: #f7c948;
+  --color-plano: #0f2c63;
+  --font-titulo: "Bricolage Grotesque", "Arial Black", sans-serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--color-fondo); color: var(--color-tinta); font-family: var(--font-sans); }
+::selection { background: var(--color-cian); color: var(--color-fondo); }
+.vidrio { background: rgb(17 20 25 / 0.92); border: 1px solid rgb(255 255 255 / 0.09); box-shadow: 0 6px 24px rgb(0 0 0 / 0.35); }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* Deslizador con la parte recorrida en cian. */
+.deslizador { -webkit-appearance: none; appearance: none; height: 4px; border-radius: 99px; outline: none;
+  background: linear-gradient(90deg, #e9ebf0 var(--pct), rgb(255 255 255 / 0.12) var(--pct)); }
+.deslizador::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%;
+  background: #0b0d12; border: 3px solid #e9ebf0; cursor: pointer; }
+.deslizador::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: #fff;
+  border: 3px solid #e9ebf0; cursor: pointer; }
+.deslizador:focus-visible::-webkit-slider-thumb { outline: 2px solid #fff; outline-offset: 2px; }
+.barra-fina::-webkit-scrollbar { width: 6px; } .barra-fina::-webkit-scrollbar-thumb { background: rgb(255 255 255 / 0.12); border-radius: 9px; }

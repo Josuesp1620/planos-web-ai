@@ -1,0 +1,8 @@
+node_modules
+dist
+
+# cloudflare wrangler
+.wrangler/
+
+# build de TypeScript
+*.tsbuildinfo

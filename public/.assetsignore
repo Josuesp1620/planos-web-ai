@@ -1,0 +1,3 @@
+# Vite copia el wasm de ONNX Runtime (~27 MB), pero Cloudflare no acepta archivos de más de 25 MiB.
+# No hace falta: transformers.js lo descarga de jsdelivr en el navegador (ver src/lib/embedder.worker.ts).
+*.wasm

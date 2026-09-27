@@ -1,0 +1,11 @@
+# Cloudflare construye con pnpm 10, que exige `packages` en este archivo. Es un solo paquete.
+packages:
+  - "."
+
+# Scripts de compilación: esbuild y workerd (wrangler). onnxruntime-node y protobufjs son la versión
+# de servidor de @huggingface/transformers; en el navegador no se usan.
+allowBuilds:
+  esbuild: true
+  workerd: true
+  onnxruntime-node: false
+  protobufjs: false
